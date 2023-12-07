@@ -1,0 +1,38 @@
+{
+    "name": "brocksinet/hosted-checkout",
+    "description": "BrocksiNet - Hosted Checkout plugin",
+    "type": "shopware-platform-plugin",
+    "version": "0.0.1",
+    "license": "MIT",
+    "require": {
+        "shopware/core": "6.5.* || 6.6.*"
+    }
+    ,
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "extra": {
+        "shopware-plugin-class": "BrocksiNet\\HostedCheckout",
+        "description": {
+            "de-DE": "Event Subscriber zur Übergabe von Warenkörben von headless Frontends an den default Checkout (Storefront). Es sind ggf. weitere Template-Anpassungen für den Checkout notwendig.",
+            "en-GB": "Event subscriber to pass shopping cart tokens from headless frontends to the hosted storefront checkout. This is the basic feature and may require additional custom template changes."
+        },
+        "manufacturerLink": {
+            "de-DE": "https://www.brocksi.net/",
+            "en-GB": "https://www.brocksi.net/"
+        },
+        "supportLink": {
+            "de-DE": "https://www.brocksi.net/",
+            "en-GB": "https://www.brocksi.net/"
+        },
+        "label": {
+            "de-DE": "powered by BrocksiNet",
+            "en-GB": "powered by BrocksiNet"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "BrocksiNet\\": "src/"
+        }
+    }
+}
